@@ -8,11 +8,9 @@ import Error from "./pages/Error";
 import Register from "./pages/Register";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import {  onMessageListener } from './PushNotifiction/firebase';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Admin from "./Admin/pages/Admin";
-import { requestPermission } from "./PushNotifiction/firebase";
 import Notification from "./Notification/Notification";
 import SendNotification from "./Admin/pages/SendNotification";
 

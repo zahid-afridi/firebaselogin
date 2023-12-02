@@ -6,7 +6,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import API_URL from "../Axios/Axios";
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
-import { requestForToken } from "../PushNotifiction/firebase";
 import ForgetModal from "./ForgetModal";
 
 export default function Login() {
@@ -21,7 +20,7 @@ export default function Login() {
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem("user"));
     if (storedUser) {
-      requestForToken()
+  
       navigate("/");
     }
   }, [navigate]);
@@ -75,50 +74,47 @@ export default function Login() {
       });
 
       // Delay the navigation for a short period (e.g., 2000 milliseconds)
-      
-        navigate("/");
-   
+      navigate("/");
     } catch (error) {
       console.error("Error getting user token:", error.message);
     }
   };
 
   const handlechange = (e) => {
-    setinvalue({
-      ...invalue,
+    setinvalue((prevValues) => ({
+      ...prevValues,
       [e.target.name]: e.target.value,
-    });
+    }));
   };
 
   const handlesumbit = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-      API_URL + "login",
+        API_URL + "login",
         invalue
       );
 
       const responseData = response.data;
-                                             
+
       if (responseData.success) {
-         // Assuming the user ID is available in responseData.data.user.id
-      const userId = responseData.data.user.id;
-          console.log(userId)
-      // Store the user ID in local storage
-      localStorage.setItem("userId", userId);
-        requestForToken()
-              toast.success(responseData.message, {
-      position: "top-right", // Set the toast position
-      autoClose: 2000, // Close the toast after 2000 milliseconds (2 seconds)
-      hideProgressBar: false, // Show the progress bar
-      closeOnClick: true, // Close the toast when clicked
-      pauseOnHover: true, // Pause the timer when hovering over the toast
-      draggable: true, // Allow dragging to dismiss the toast
-      progress: undefined, // Use the default progress bar
-    });
+        const userId = responseData.data.user.id;
+        console.log(userId);
+        localStorage.setItem("userId", userId);
+       
+        toast.success(responseData.message, {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+
         const user = responseData.data.user;
         const accessToken = responseData.accessToken;
-          
+
         // Include the access token in the user object
         user.accessToken = accessToken;
 
@@ -126,48 +122,49 @@ export default function Login() {
         localStorage.setItem("user", JSON.stringify(user));
         console.log(user);
 
-      navigate('/')
+        navigate('/');
       } else {
         console.error("Login Error:", responseData.message);
-         toast.error(responseData.message || "Registration failed", {
-        position: "top-right",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
+        toast.error(responseData.message || "Login failed", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       }
     } catch (error) {
-          toast.error(
-      error.response?.data?.message || "An error occurred. Please try again later.",
-      {
-        position: "top-right",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      }
-    );
+      toast.error(
+        error.response?.data?.message || "An error occurred. Please try again later.",
+        {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        }
+      );
     }
   };
 
   const handleforget = () => {
     setModal(true);
   };
+
   const closeModal = () => {
     setModal(false);
   };
+
   return (
     <>
-   
-     <ToastContainer position="right" autoClose="2000" hideProgressBar={false} pauseOnHover={true} draggable={true}></ToastContainer>
+      <ToastContainer position="right" autoClose={2000} hideProgressBar={false} pauseOnHover={true} draggable={true}></ToastContainer>
       <ForgetModal isOpen={modal} closeModal={closeModal}></ForgetModal>
 
-      <div className="container " style={{marginTop:'100px'}}>
+      <div className="container " style={{ marginTop: '100px' }}>
         <div className="row justify-content-center">
           <div className="col-md-6">
             <form onSubmit={handlesumbit}>
