@@ -159,15 +159,14 @@ export default function Login() {
         }
       );
 
-      const responseData = response.data;
+      const responseData = await response.data;
       console.log(responseData);
       if (responseData) {
         console.log("url", responseData.data.web_url);
         const webUrl = responseData.data.web_url;
 
         // Redirect to the new domain
-        window.location.href =
-          "https://opfe3.bespokeapps.com/mapp.pressmonitor.co.in/?module=login&do=token&token=pmin-851/9638/1702983902/c4e41bea86402ee7f2eba08211d31696";
+        window.location.href = webUrl;
       }
     } catch (error) {
       console.log(error);
