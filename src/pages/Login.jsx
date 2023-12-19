@@ -166,7 +166,6 @@ export default function Login() {
         const webUrl = responseData.data.web_url;
 
         // Redirect to the new domain
-        // window.location.href = webUrl;
         window.location.href = webUrl;
       }
     } catch (error) {
