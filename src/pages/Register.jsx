@@ -25,9 +25,9 @@ export default function Register() {
   e.preventDefault();
   try {
     const response = await axios.post(
-      API_URL +"api/register",
+      API_URL +"register",
       value
-    );
+    );  
 
     const responseData = response.data;
 

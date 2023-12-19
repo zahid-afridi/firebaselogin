@@ -17,7 +17,6 @@ import SendNotification from "./Admin/pages/SendNotification";
 export default function App() {
   // useEffect(() => {
   //   // Request permission and retrieve token when the component mounts
-   
 
   //   // Set up the message listener
   //   const unsubscribePromise = onMessageListener().then((payload) => {
@@ -43,14 +42,17 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
-       <Notification></Notification>
+        <Notification></Notification>
         {/* <ToastContainer></ToastContainer> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/admin/sendNotficaiton" element={<SendNotification></SendNotification>} />
+          <Route
+            path="/admin/sendNotficaiton"
+            element={<SendNotification></SendNotification>}
+          />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>

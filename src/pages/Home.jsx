@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { auth } from "./Confiq";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 import API_URL from "../Axios/Axios";
 import Notification from "../Notification/Notification";
-import { ToastContainer, toast } from "react-toastify";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -14,16 +14,16 @@ export default function Home() {
     // Check if the user is logged in or not
     const userString = localStorage.getItem("user");
     const loginUser = JSON.parse(userString);
-
+         
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (!user && !loginUser) {
+
+        
         navigate("/login");
       } else {
         try {
           const token = await user.getIdToken();
-          console.log("User Token:", token);
-
-          // Add the access token to the user object
+          
           user.accessToken = token;
         } catch (error) {
           console.error("Error getting user token:", error.message);
@@ -39,6 +39,22 @@ export default function Home() {
       // Sign out from Firebase authentication
       await signOut(auth);
 
+      const userString = localStorage.getItem("user");
+      const user = JSON.parse(userString);
+        // Check if user data contains an access token
+      if (user.accessToken) {
+        // Send a POST request to the logout API endpoint with the token in the header
+      const postlogut=  await axios.post(
+          API_URL + "logout",
+          {},
+          {
+            headers: {
+              Authorization: `Bearer ${user.accessToken}`,
+            },
+          }
+        );
+     
+      }
       // Remove user data from local storage
       localStorage.removeItem("user");
       localStorage.removeItem('userId');
@@ -80,7 +96,7 @@ export default function Home() {
         pauseOnHover={true}
         draggable={true}
       ></ToastContainer>
-      <div className="container mt-5">
+      <div className="container " style={{marginTop:'100px',marginLeft:'250px'}}>
         {user && (
           <div className="container">
             <h2>Welcome, {user.displayName || user.email}!</h2>
@@ -89,7 +105,7 @@ export default function Home() {
             {user.providerData && user.providerData.length > 0 && (
               <p>Provider: {user.providerData[0].providerId}</p>
             )}
-            <button className="btn btn-primary" onClick={logout}>
+            <button className="btn btn-primary w-25" onClick={logout}>
               Logout
             </button>
           </div>
