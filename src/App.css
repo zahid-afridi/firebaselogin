@@ -1,19 +1,33 @@
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-
+}
+.main-color {
+  color: #cc0000;
 }
 
 body {
-
-font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
+
+/* navbar start */
+a {
+  font-size: 14px;
+  font-weight: 700;
+}
+.superNav {
+  font-size: 13px;
+}
+.navbar .nav-link {
+  font-size: 1.5rem;
+}
+
+.navbar .navbar-nav {
+  gap: 1rem;
+}
+/* navbar end */
 .login_btn {
   padding: 10px;
   border: none;
@@ -31,51 +45,46 @@ font-family: 'Roboto', sans-serif !important;
   gap: 20px;
 }
 .btn_container {
-   display: flex;
-position: absolute;
-gap: 10px;
-margin-top: 20px;
-flex-direction: column;
-
-
+  display: flex;
+  position: absolute;
+  gap: 10px;
+  margin-top: 20px;
+  flex-direction: column;
 }
 .btn_container h5 {
   font-size: 20px;
 }
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 10px;
- 
- 
 }
-.login_form{
+.login_form {
   width: 300px;
   background-color: rgb(222, 137, 185);
   padding: 20px;
-   margin-bottom: 60px;
-   border-radius: 10px;
+  margin-bottom: 60px;
+  border-radius: 10px;
   height: 420px;
   margin-top: 90px;
-   color: white !important;
-   color: rgb(33, 33, 164);
-
+  color: white !important;
+  color: rgb(33, 33, 164);
 }
-.login_form form input{
+.login_form form input {
   border: none;
   outline: none;
   border-radius: 10px !important;
 }
-.register_form{
-    width: 400px;
+.register_form {
+  width: 400px;
   background-color: rgb(138, 82, 114);
   padding: 20px;
-   margin-bottom: 60px;
-   border-radius: 10px;
-   color: white;
-   margin-top: 50px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 50px;
 }
-.register_form form input{
+.register_form form input {
   border: none;
   outline: none;
   border-radius: 10px !important;
@@ -83,10 +92,10 @@ form{
   border-radius: 10px !important;
 }
 
-.forget_modal{
+.forget_modal {
   background-color: rgb(9, 24, 134);
   position: absolute;
-margin-top: -10px;
+  margin-top: -10px;
   z-index: 999;
   width: 400px;
   margin-left: 500px;
@@ -100,37 +109,35 @@ margin-top: -10px;
 
   color: white;
 }
-.forget_modal .content{
+.forget_modal .content {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
   gap: 50px;
   margin-top: 50px;
 }
-.forget_modal .content input
-{
-       width: 250px;
-       height: 40px;
-       border: none;
-       outline: none;
-       border-radius: 10px;
-       padding-left: 10px;
-
+.forget_modal .content input {
+  width: 250px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 10px;
 }
-.forget_modal .fa-x{
+.forget_modal .fa-x {
   float: right;
   margin-top: 20px;
-margin-right: 50px;
-font-size: 20px;
-font-weight: bold;
-color: white;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
-.forget_modal button{
-    padding: 10px;
+.forget_modal button {
+  padding: 10px;
   border: none;
   outline: none;
   width: 300px;
-  margin-top: 30px ;
+  margin-top: 30px;
   margin-left: 30px;
   font-weight: bold;
   border-radius: 10px;
@@ -154,26 +161,25 @@ color: white;
   padding: 10px;
   margin-bottom: 10px;
 }
-.login-form{
+.login-form {
   margin-top: 80px;
 }
-.login-form input{
-   width: 410px;
-   border: 0.5px solid black;
-   height: 50px;
-   border-radius: 5px;
-   padding-left: 20px;
+.login-form input {
+  width: 410px;
+  border: 0.5px solid black;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 20px;
 }
-.login-form input:hover,.login-form input:active{
+.login-form input:hover,
+.login-form input:active {
   border: 2px solid black;
 }
-.login-form .forgot{
-  color: #006BB6;
+.login-form .forgot {
+  color: #006bb6;
   font-weight: bold;
-
 }
-.login-form .loginwithBtn{
-
+.login-form .loginwithBtn {
   border: 1px solid black;
   width: 320px;
   height: 45px !important;
@@ -184,17 +190,54 @@ color: white;
   align-items: center;
   border-radius: 50px;
 }
-.login-form .loginwithBtn:hover{
+.login-form .loginwithBtn:hover {
   border: 2px solid black;
   cursor: pointer;
 }
 .login-form .loginwithBtn img {
   width: 25px;
 }
-.login-form .loginwithBtn span{
+.login-form .loginwithBtn span {
   font-weight: bold;
 }
 
 /* login form css start  */
 
 /* login form css end */
+
+/* print media card start */
+.print_Card {
+  max-width: 18rem;
+
+  height: 15rem !important;
+  padding: 20px;
+  border-radius: 10px;
+}
+.print_Card .Checkbox {
+  width: 20px;
+  height: 20px;
+}
+input[type="checkbox"] {
+  accent-color: red;
+}
+.print_Card .Print_img {
+  width: 6.8rem;
+}
+.print_Card .fa-solid {
+  font-size: 1.1rem;
+  color: #c60200;
+}
+.print_Card .loction_city {
+}
+.showMore {
+  color: blue !important;
+  font-size: 15px !important;
+}
+.Forward_Icon {
+  width: 35px;
+  cursor: pointer;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+/* print media card end */

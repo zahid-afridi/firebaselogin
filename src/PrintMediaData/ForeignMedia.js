@@ -1,0 +1,47 @@
+export const ForeignMedia = [
+  {
+    img: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/igyqOlSkCPpA/v1/1200x800.jpg",
+    title:
+      "Conflict zones in the Middle East (West Asia) and Afghanistan are becoming rallying points for foreign fighters driven by jihadi fervour. Even in Gaza, where geographical and political particularities inhibit boots on the ground, it has not diminished their intent or agency. This mirrors earlier situations in Chechnya as well as in Syria-Iraqand Afghanistan itself, where thousands of ideologically indoctrinated foreign fighters were drawn into complex conflicts, framed through the lens of religion. Jihadi groups are adept at manipulating tales of suffering and distorting religion to fill their ranks. Lured by the promise of being instrumental in a greater cause, individuals in places as far removed as France and Maldives are volunteering to fight for causes and conflicts they know little about. At its height, it was estimated that close to two-thirds of ISIS fighters were foreign belligerents.",
+  },
+  {
+    img: "https://en.setopati.com/uploads/posts/725X460/COP2811701495093.png",
+    title:
+      "Conflict zones in the Middle East (West Asia) and Afghanistan are becoming rallying points for foreign fighters driven by jihadi fervour. Even in Gaza, where geographical and political particularities inhibit boots on the ground, it has not diminished their intent or agency. This mirrors earlier situations in Chechnya as well as in Syria-Iraqand Afghanistan itself, where thousands of ideologically indoctrinated foreign fighters were drawn into complex conflicts, framed through the lens of religion. Jihadi groups are adept at manipulating tales of suffering and distorting religion to fill their ranks. Lured by the promise of being instrumental in a greater cause, individuals in places as far removed as France and Maldives are volunteering to fight for causes and conflicts they know little about. At its height, it was estimated that close to two-thirds of ISIS fighters were foreign belligerents.",
+  },
+  {
+    img: "https://static1.straitstimes.com.sg/s3fs-public/styles/large30x20/public/articles/2023/12/02/FILES-FINLAND-ENERGY-NUCLEAR-093108.jpg?itok=Czzvq3bg",
+    title:
+      "Conflict zones in the Middle East (West Asia) and Afghanistan are becoming rallying points for foreign fighters driven by jihadi fervour. Even in Gaza, where geographical and political particularities inhibit boots on the ground, it has not diminished their intent or agency. This mirrors earlier situations in Chechnya as well as in Syria-Iraqand Afghanistan itself, where thousands of ideologically indoctrinated foreign fighters were drawn into complex conflicts, framed through the lens of religion. Jihadi groups are adept at manipulating tales of suffering and distorting religion to fill their ranks. Lured by the promise of being instrumental in a greater cause, individuals in places as far removed as France and Maldives are volunteering to fight for causes and conflicts they know little about. At its height, it was estimated that close to two-thirds of ISIS fighters were foreign belligerents.",
+  },
+  {
+    img: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/igyqOlSkCPpA/v1/1200x800.jpg",
+    title:
+      "Conflict zones in the Middle East (West Asia) and Afghanistan are becoming rallying points for foreign fighters driven by jihadi fervour. Even in Gaza, where geographical and political particularities inhibit boots on the ground, it has not diminished their intent or agency. This mirrors earlier situations in Chechnya as well as in Syria-Iraqand Afghanistan itself, where thousands of ideologically indoctrinated foreign fighters were drawn into complex conflicts, framed through the lens of religion. Jihadi groups are adept at manipulating tales of suffering and distorting religion to fill their ranks. Lured by the promise of being instrumental in a greater cause, individuals in places as far removed as France and Maldives are volunteering to fight for causes and conflicts they know little about. At its height, it was estimated that close to two-thirds of ISIS fighters were foreign belligerents.",
+  },
+  {
+    img: "https://static1.straitstimes.com.sg/s3fs-public/styles/large30x20/public/articles/2023/12/02/LYNXMPEJB101H-1.jpg?itok=bB1Qv_ti",
+    title:
+      "Conflict zones in the Middle East (West Asia) and Afghanistan are becoming rallying points for foreign fighters driven by jihadi fervour. Even in Gaza, where geographical and political particularities inhibit boots on the ground, it has not diminished their intent or agency. This mirrors earlier situations in Chechnya as well as in Syria-Iraqand Afghanistan itself, where thousands of ideologically indoctrinated foreign fighters were drawn into complex conflicts, framed through the lens of religion. Jihadi groups are adept at manipulating tales of suffering and distorting religion to fill their ranks. Lured by the promise of being instrumental in a greater cause, individuals in places as far removed as France and Maldives are volunteering to fight for causes and conflicts they know little about. At its height, it was estimated that close to two-thirds of ISIS fighters were foreign belligerents.",
+  },
+  {
+    img: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/igyqOlSkCPpA/v1/1200x800.jpg",
+    title:
+      "Conflict zones in the Middle East (West Asia) and Afghanistan are becoming rallying points for foreign fighters driven by jihadi fervour. Even in Gaza, where geographical and political particularities inhibit boots on the ground, it has not diminished their intent or agency. This mirrors earlier situations in Chechnya as well as in Syria-Iraqand Afghanistan itself, where thousands of ideologically indoctrinated foreign fighters were drawn into complex conflicts, framed through the lens of religion. Jihadi groups are adept at manipulating tales of suffering and distorting religion to fill their ranks. Lured by the promise of being instrumental in a greater cause, individuals in places as far removed as France and Maldives are volunteering to fight for causes and conflicts they know little about. At its height, it was estimated that close to two-thirds of ISIS fighters were foreign belligerents.",
+  },
+  {
+    img: "https://en.setopati.com/uploads/posts/725X460/COP2811701495093.png",
+    title:
+      "Conflict zones in the Middle East (West Asia) and Afghanistan are becoming rallying points for foreign fighters driven by jihadi fervour. Even in Gaza, where geographical and political particularities inhibit boots on the ground, it has not diminished their intent or agency. This mirrors earlier situations in Chechnya as well as in Syria-Iraqand Afghanistan itself, where thousands of ideologically indoctrinated foreign fighters were drawn into complex conflicts, framed through the lens of religion. Jihadi groups are adept at manipulating tales of suffering and distorting religion to fill their ranks. Lured by the promise of being instrumental in a greater cause, individuals in places as far removed as France and Maldives are volunteering to fight for causes and conflicts they know little about. At its height, it was estimated that close to two-thirds of ISIS fighters were foreign belligerents.",
+  },
+  {
+    img: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/igyqOlSkCPpA/v1/1200x800.jpg",
+    title:
+      "Conflict zones in the Middle East (West Asia) and Afghanistan are becoming rallying points for foreign fighters driven by jihadi fervour. Even in Gaza, where geographical and political particularities inhibit boots on the ground, it has not diminished their intent or agency. This mirrors earlier situations in Chechnya as well as in Syria-Iraqand Afghanistan itself, where thousands of ideologically indoctrinated foreign fighters were drawn into complex conflicts, framed through the lens of religion. Jihadi groups are adept at manipulating tales of suffering and distorting religion to fill their ranks. Lured by the promise of being instrumental in a greater cause, individuals in places as far removed as France and Maldives are volunteering to fight for causes and conflicts they know little about. At its height, it was estimated that close to two-thirds of ISIS fighters were foreign belligerents.",
+  },
+  {
+    img: "https://media.assettype.com/bdnews24-english%2F2023-12%2F69e4650a-1b4a-47c8-8abc-5b9b72de3cc0%2Ftechnology_climate_021223_01.jpg?auto=format%2Ccompress&fmt=webp&format=webp&w=640",
+    title:
+      "Conflict zones in the Middle East (West Asia) and Afghanistan are becoming rallying points for foreign fighters driven by jihadi fervour. Even in Gaza, where geographical and political particularities inhibit boots on the ground, it has not diminished their intent or agency. This mirrors earlier situations in Chechnya as well as in Syria-Iraqand Afghanistan itself, where thousands of ideologically indoctrinated foreign fighters were drawn into complex conflicts, framed through the lens of religion. Jihadi groups are adept at manipulating tales of suffering and distorting religion to fill their ranks. Lured by the promise of being instrumental in a greater cause, individuals in places as far removed as France and Maldives are volunteering to fight for causes and conflicts they know little about. At its height, it was estimated that close to two-thirds of ISIS fighters were foreign belligerents.",
+  },
+];
